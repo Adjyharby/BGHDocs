@@ -39,7 +39,17 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'devlog',
+        path: 'devlog',
+        routeBasePath: 'devlog',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -94,8 +104,14 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'devlogsidebar',
+            docsPluginId: 'devlog',
+            position: 'left',
+            label: 'Development logs',
+          },
           {to: '/about', label: 'About', position: 'right'},
-          {to: '/devlog', label: 'Development logs', position: 'right'},
           {
             href: 'https://github.com/Adjyharby',
             label: `Developer's GitHub Account`,
