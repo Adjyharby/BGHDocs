@@ -1,0 +1,67 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c24c;
+  --ifm-color-primary-dark: #23a343;
+  --ifm-color-primary-darker: #1f913b;
+  --ifm-color-primary-darkest: #1a7531;
+  --ifm-color-primary-light: #27cf51;
+  --ifm-color-primary-lighter: #23e253;
+  --ifm-color-primary-lightest: #2bfa5f;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom footer color overrides
+   - Edit the hex values below to match your branding.
+   - Light theme: default (no [data-theme])
+   - Dark theme: uses the existing data-theme attribute
+*/
+
+.footer {
+  background-color: #f4f6f8; /* Light footer background */
+  color: #1f2937; /* Light footer text */
+}
+.footer a {
+  color: #0b5ed7; /* Link color in footer (light) */
+}
+.footer a:hover {
+  color: #084ab3;
+}
+.footer .footer__link-list a {
+  color: inherit;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #071028; /* Dark footer background */
+  color: #d1d5db; /* Dark footer text */
+}
+[data-theme='dark'] .footer a {
+  color: #7fb0ff; /* Link color in footer (dark) */
+}
+[data-theme='dark'] .footer a:hover {
+  color: #5aa0ff;
+}
+
+/* Make sure copyright/bottom text matches */
+.footer .footer__bottom-text {
+  color: inherit;
+}
+
